@@ -78,17 +78,17 @@ typedef ModePickerBuilder = Widget? Function(
 
 /// Predicate to determine the day widget box decoration for a day in selected range
 typedef SelectedRangeDecorationPredicate = BoxDecoration? Function({
-  DateTime dayToBuild,
-  Decoration decoration,
-  bool isStartDate,
-  bool isEndDate,
+  DateTime? dayToBuild,
+  Decoration? decoration,
+  bool? isStartDate,
+  bool? isEndDate,
 });
 
 /// Function to provide full control over range picker highlight
 typedef SelectedRangeHighlightBuilder = Widget Function({
-  DateTime dayToBuild,
-  bool isStartDate,
-  bool isEndDate,
+  DateTime? dayToBuild,
+  bool? isStartDate,
+  bool? isEndDate,
 });
 
 /// Handler for the text displayed in the mode picker
